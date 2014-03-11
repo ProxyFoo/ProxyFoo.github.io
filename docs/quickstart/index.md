@@ -4,11 +4,10 @@ title: Quick Start Guide
 ---
 #Quick Start Guide
 
->*ProxyFoo is currently v0.x.x, which means that any of the API is subject to change.  This is especially true for parts of the API not documented here.*
-
+<div id="duckcasting" class="heading"></div>
 ##Duck Casting
 
-A duck cast can be created using the following static method call:
+A duck cast can be applied using the following static method call:
 
 ```c#
 var result = Duck.Cast<ISample>(obj);

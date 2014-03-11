@@ -4,35 +4,40 @@ title: ProxyFoo
 ---
 
 <div class="jumbotron">
-	<div class="container">
-		<h1>ProxyFoo</h1>
-		<p class="lead">A .NET Framework library to facilitate creating <b>high-performance</b> proxies.<br>
-			Includes built-in proxies for:
-			<ul class="lead">
-				<li>Duck Casting</li>
-				<li>Null-Safe Wrappers</li>
-			</ul>
-		</p>
-		<p><a class="btn btn-primary btn-lg" role="button" href="/docs/quickstart">Quick Start Guide &raquo;</a></p>
+    <div class="container">
+        <h1>ProxyFoo</h1>
+        <p class="lead">A .NET Framework library to facilitate creating <b>high-performance</b> proxies.<br>
+            Includes built-in proxies for:
+            <ul class="lead">
+                <li>Duck Casting</li>
+                <li>Null-Safe Wrappers</li>
+            </ul>
+        </p>
+        <p>
+            <a class="btn btn-primary btn-lg btn-jumbotron" role="button" href="/docs/quickstart/">Quick Start Guide &raquo;</a>
+            <a class="btn btn-primary btn-lg btn-jumbotron" role="button" href="/docs/overview/">Overview &raquo;</a>
+        </p>
     </div>
 </div>
 
 <div class="container">
-	<div class="row">
-		<div class="col-md-4">
-			<h2>Duck Casting</h2>
-			<p>Cast any object with a matching signature to an interface.</p>
-			<!--<p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>-->
-		</div>
-		<div class="col-md-4">
-			<h2>Null-Safe Wrappers</h2>
-			<p>Create a wrapper for an interface that will not implement default return values and null objects to avoid null handling.</p>
-			<!--<p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>-->
-		</div>
-		<div class="col-md-4">
-			<h2>Proxy Framework</h2>
-			<p>Use the framework to build your own proxy types.</p>
-			<!--<p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>-->
-		</div>
-	</div>
+    <div class="row">
+        <div class="col-md-4">
+            <h2>Duck Casting</h2>
+            <p>Cast any object with a matching signature to an interface.</p>
+            <p><a class="btn btn-default" href="/docs/duckproxies/" role="button">View details &raquo;</a></p>
+        </div>
+        <div class="col-md-4">
+            <h2>Null-Safe Wrappers</h2>
+            <p>Create a wrapper for an interface that will not implement default return values and null objects to avoid null handling.</p>
+            <p><a class="btn btn-default" href="/docs/safeproxies" role="button">View details &raquo;</a></p>
+        </div>
+        <div class="col-md-4">
+            <h2>Proxy Framework</h2>
+            <p>Use the framework to build your own proxy types.</p>
+            <!--<p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>-->
+        </div>
+    </div>
+
+    {% include footer.html %}
 </div>
