@@ -85,7 +85,7 @@ Methods from the subject interface are bound to members of the real subject by n
         </tr>
         <tr>
             <td>Implicit Nullable</td>
-            <td><p>Allows a conversion from a value type to its nullable type including an implicit numeric converstion if needed.</p>
+            <td><p>Allows a conversion from a value type to its nullable type including an implicit numeric conversion if needed.</p>
                 <pre>int? a = 4;</pre>
                 <p>From Section 6.1.3*</p>
             </td>

@@ -31,9 +31,6 @@ This is useful for a factory scenario or when casting multiple objects in a
 loop.  This reduces overhead such that a cast of this form performs better than
 using dynamic after about 2 method calls.
 
-**Not Yet Supported**: 
-Generics, Recursively defined types, out parameters
-
 ##Null-safe Wrapper
 
 A null-safe wrapper can be placed around a value with the following static method call:
