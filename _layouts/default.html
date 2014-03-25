@@ -58,7 +58,6 @@
     <!-- Latest compiled and minified JavaScript -->
     <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
 </body>
-
 <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
   (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -88,9 +87,22 @@
           // listen for when the browser performs the scroll
       $(window).one('scroll', function () {
             // scroll the window up by the height of the navbar
-            window.scrollBy(0, -$nav.height())
+            window.scrollBy(0, -$nav.height()-5)
         });
 
   });
     </script>
+<script>
+  var path = $(location).attr('pathname');
+  var $pageLi = $("div.toc li").has("h4 a[href$='" + path + "']");
+  $pageLi.addClass("toc-active");
+  var $newUl = $("<ul></ul>");
+  $("h2").each(function() {
+    var regex = / /g;
+    var id = $(this).text().replace(regex,"_");
+    $(this).attr("id",id);
+    $newUl.append("<li><h5><a href='#" + id + "'>" + $(this).text() + "</a></h5></li>");  
+  })
+  $pageLi.append($newUl);
+</script>
     </html>
