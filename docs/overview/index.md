@@ -19,6 +19,10 @@ Duck proxies can be useful for providing better seperation of dependencies, by n
 
 Safe proxies allow for null safe implementation of a subject interface.  They implement a subject interface in multiple ways.  In the case of a null, there is no real subject, and the each method will return a default value.  When there is a real subject, the methods are delegating accordingly, and return values checked for null and a safe proxy will be applied when necessary.
 
+###Intercept Proxy
+
+Intercept proxies allow interfaces to be intercepted.  They intercept a subject interface for the proxy type and can execute code before and after calling the original method.  The original method may also be bypassed.
+
 ##Design Principles
 
 ###Consistency
